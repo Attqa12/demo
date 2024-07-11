@@ -1,4 +1,4 @@
 # demo
 this my first git repository
 <br>
-auther ->attqa nasir author
+auther ->attqa nasir<br>author
