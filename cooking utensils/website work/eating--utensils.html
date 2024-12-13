@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eating utensils</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Awesome for cart icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+      
+      #navbarDropdown:hover{
+        color:white
+      }
+       
+      #navbarDropdown:focus{
+        color:white
+      }
+
+      /*  styles here */
+      .navbar-center {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+      }
+
+      .primary-heading {
+          font-family: 'Georgia', serif;
+          font-style: italic;
+          padding-bottom: 4px;
+          margin-bottom: 10px;
+          border-bottom: 2px solid #7dc4ba;
+          color: #16423C;
+      }
+
+      .card-text {
+          font-weight: bold;
+          color: #16423C;
+      }
+
+      .carousel-item img {
+          object-fit: cover;
+          width: 100%;
+          height: 500px;
+      }
+
+      .navbar a {
+          color: white;
+          font-size: 18px;
+          padding: 10px;
+      }
+
+      .dropdown-item:hover {
+          background-color: #3f7e75;
+      }
+
+      .btn {
+          background-color: #16423C;
+          color: white;
+      }
+
+      .btn:hover {
+          border: 1px solid #16423C;
+      }
+
+      .card {
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          margin-top: 30px;
+      }
+
+      
+      .card {
+    
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+
+
+    .card:hover {
+    transform: scale(1.05);
+  }
+
+      input.form-control:hover,
+      input.form-control:focus {
+          border-color: #16423C;
+          box-shadow: none;
+      }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #16423C;">
+    <a class="navbar-brand" href="#" style="color:white;">
+        <img src="logo.png" alt="Logo" style="width: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-center">
+            <li class="nav-item active"><a class="nav-link" href="#" style="color:white;;font-size:18px;font-family:poppins ">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:white;;font-size:18px;font-family:poppins " >Categories</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#" style="color:rgb(0, 0, 0)">Cooking Utensils</a></li>
+                    <li><a class="dropdown-item" href="servingutensils.html" style="color:rgb(0, 0, 0)">Serving Utensils</a></li>
+                    <li><a class="dropdown-item" href="#" style="color:rgb(0, 0, 0)">Eating Utensils</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color:white;;font-size:18px;font-family:poppins "">Feedback</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color:white;;font-size:18px;font-family:poppins "">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color:white;;font-size:18px;font-family:poppins "">Discount</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#" style="color:white;;font-size:18px;font-family:poppins "">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"style="color:white;;font-size:18px;font-family:poppins "">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<br><br><br>
+
+<!-- Carousel -->
+<div class="container">
+    <div id="utensilsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400?text=Utensil+1" class="d-block w-100" alt="Utensil 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Serving Utensils</h5>
+                    <p>Durable and sleek design for every kitchen.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Utensil+2" class="d-block w-100" alt="Utensil 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Serving Utensils</h5>
+                    <p>Durable and sleek design for every kitchen.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Utensil+3" class="d-block w-100" alt="Utensil 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Serving Utensils</h5>
+                    <p>Durable and sleek design for every kitchen.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#utensilsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#utensilsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+</div>
+
+
+<div class="container py-5 " >
+    
+  
+    <br><br><br>
+    <h1 class="primary-heading text-center mb-4">serving Utensils</h1>
+  <br><br>  
+<!-- Search Bar -->
+<div class="row mb-4 justify-content-center" >
+  <div class="col-8">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search" style="border:1px solid 
+      #16423C">
+      <button class="btn " type="submit">Search</button>
+    </form>
+  </div>
+</div>
+  <br><br>
+  <div class="row g-5 ">
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="Utensils images/kitchenutensils/serving utensils/cake serving/Lift & Serve Spatula 1.2.png" class="card-img-top" alt="Product 1">
+          <div class="card-body text-center ">
+            <p class="card-text">lift and serving spatula</p>
+            <p style="color:#16423C;font-size:18px">$11</p>
+            <a href="#" class="btn " >add to cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="Utensils images/kitchenutensils/serving utensils/cake serving/Pie Server 1.1.png" class="card-img-top" alt="Product 2">
+          <div class="card-body  text-center">
+            <p class="card-text">cake and pie server</p>
+            <p style="color:#16423C;font-size:18px">$13</p>
+  
+            <a href="#" class="btn ">add to cart</a>
+          </div>
+        </div>
+      </div>
+      
+      
+    
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="Utensils images/kitchenutensils/serving utensils/cheeze knife/Hard Cheese Knife 1.1.png" class="card-img-top" alt="Product 3">
+          <div class="card-body  text-center">
+            <p class="card-text">hard cheese knife.</p>
+            <p style="color:#16423C;font-size:18px">$20</p>
+  
+            <a href="#" class="btn ">add to cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="Utensils images/kitchenutensils/serving utensils/cheeze knife/Fork-Tipped Cheese Knife 1.0.png" class="card-img-top" alt="Product 4">
+          <div class="card-body  text-center">
+            <p class="card-text">soft cheese knife.</p>
+            <p style="color:#16423C;font-size:18px">$20</p>
+  
+            <a href="#" class="btn ">add to cart</a>
+          </div>
+        </div>
+      </div>
+  
+  
+       <!-- Card 3 -->
+       <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/fish paddle/Fish Cleaning Paddle 1.1.png" class="card-img-top" alt="Product 3">
+            <div class="card-body  text-center">
+              <p class="card-text">fish cleaning paddle.</p>
+              <p style="color:#16423C;font-size:18px">$11</p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/fish paddle/Fish Turner 1.1.png" class="card-img-top" alt="Product 4">
+            <div class="card-body  text-center">
+              <p class="card-text">fish tunner.</p>
+              <p style="color:#16423C;font-size:18px">$15</p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+         <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/rice dish/Rice Bowl 1.0.png" class="card-img-top" alt="Product 3">
+            <div class="card-body  text-center">
+              <p class="card-text">marble rice bowl.</p>
+              <p style="color:#16423C;font-size:18px">$15</p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/rice dish/Rice Tray 1.0.png" class="card-img-top" alt="Product 4">
+            <div class="card-body  text-center">
+              <p class="card-text"> plastic rice tray.</p>
+              <p style="color:#16423C;font-size:18px">$12</p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+         <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/rice paddle/OXO Good Grips Rice Paddle 1.2.png" class="card-img-top" alt="Product 3">
+            <div class="card-body  text-center">
+              <p class="card-text">rice paddle.</p>
+              <p style="color:#16423C;font-size:18px">$15</p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/salad server/Salad Spoon and Fork Set 1.2.png" class="card-img-top" alt="Product 4">
+            <div class="card-body text-center">
+              <p class="card-text"> spoon and fork set.</p>
+              <p style="color:#16423C;font-size:18px">$20</p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+         <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/Scoop spoon/Ice Cream Scoop 1.1.png" class="card-img-top" alt="Product 3">
+            <div class="card-body  text-center">
+              <p class="card-text">ice cream scoop set.</p>
+              <p style="color:#16423C;font-size:18px">$14</p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Utensils images/kitchenutensils/serving utensils/serving fork/Carving Fork Meat 1.0.png" class="card-img-top" alt="Product 4">
+            <div class="card-body  text-center">
+              <p class="card-text">carving frok for meat.</p>
+              <p style="color:#16423C;font-size:18px">$10<p>
+  
+              <a href="#" class="btn ">add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+     
+    </div>
+</div>
+  
+
+<!-- pagination -->
+  
+<div class="container mt-5">
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center flex-wrap">
+  
+  
+  
+        <li>
+          <a class="page-link" href="#" target="_blank"   style="color:#16423C">previous</a>
+        </li>
+  
+  
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">next</a>
+        </li>
+        
+      </ul>
+    </nav>
+</div>  
+  
+
+  
+<!-- Footer -->
+<footer class=" pt-5 pb-4 mt-5" style="background-color: #16423C;color:white">
+    <div class="container text-center text-md-left ">
+        <div class="row text-center text-md-left">
+            
+            <!-- Column 1: Company Information -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold " style="color:grey">Company Name</h5>
+                <p>
+                    shine utensils
+                </p>
+            </div>
+            
+            <!-- Column 2: Products Links -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold " style="color:grey">Products</h5>
+                <p><a href="#" class="text-white" style="text-decoration: none;">cooking utensils</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">eating utensils</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">serving utensils</a></p>
+            </div>
+
+            <!-- Column 3: Useful Links -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold " style="color:grey">Useful Links</h5>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Your Account</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Become an Affiliate</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Shipping Rates</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold " style="color:grey">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> 1234 Main Street,
+                    Suite 101
+                    City, State, Zip Code
+                    Country</p>
+                <p><i class="fas fa-envelope mr-3"></i> shineutensils@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+        
+        <!-- Horizontal line -->
+        <hr class="mb-4">
+
+        <!-- Footer bottom section -->
+        <div class="row align-items-center">
+            <!-- Copyright -->
+            <div class="col-md-7 col-lg-8">
+                <p class="text-center text-md-left">© 2024 Copyright:
+                    <a href="#"  style="text-decoration: none;">
+                        <strong style="color:grey"> shine utensils.com</strong>
+                    </a>
+                </p>
+            </div>
+
+            <!-- Social media links -->
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>  
+
+<!-- Bootstrap JavaScript Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
